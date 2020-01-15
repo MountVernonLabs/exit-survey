@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Exit Survey</title>
+		<style>
+			body, html, #container {margin:0px;background: #fff;}
+			#content {margin: 20px;}
+			#header { background: url('bground.jpg'); height: 125px; text-align: center; padding-top: 20px;}
+		</style>
+		<script src="jquery.min.js"></script>
+		<script src="idle.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<img src="logo.png">
+			</div>
+			<div id="content">
+				<div id="wufoo-mgl4i1g0bgbjq2">
+				</div>
+				<script type="text/javascript">var mgl4i1g0bgbjq2;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'gwmountvernon',
+				'formHash':'mgl4i1g0bgbjq2',
+				'autoResize':true,
+				'height':'1003',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { mgl4i1g0bgbjq2 = new WufooForm();mgl4i1g0bgbjq2.initialize(options);mgl4i1g0bgbjq2.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
+			</div>
+		</div>
+		<script type="text/javascript">
+			setIdleTimeout(120000); // 10 minutes
+			setAwayTimeout(120000); // 10 minutes
+			document.onIdle = function() {location.reload();}
+		</script>  
+	</body>
+</html>
